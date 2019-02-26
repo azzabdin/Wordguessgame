@@ -10,10 +10,11 @@ console.log(computerguess)
 document.onkeyup = function (event) {
 
     var userchoice = event.key
+    
     if (userchoice === computerguess) {
-        wins++;
+        wins++;reset()
         alert("you are right the letter is " + computerguess);
-        reset()
+        
     }
     else {
         guessesleft--;
