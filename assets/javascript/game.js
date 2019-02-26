@@ -12,10 +12,10 @@ document.onkeyup = function (event) {
     var userchoice = event.key
     
     if (userchoice === computerguess) {
-        wins++;reset()
+        wins++;
         alert("you are right the letter is " + computerguess);
         
-    }
+        reset(); }
     else {
         guessesleft--;
         document.querySelector("#left").innerHTML = guessesleft;
