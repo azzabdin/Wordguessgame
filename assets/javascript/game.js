@@ -7,7 +7,7 @@ var alphabet = ["a", "b", "c","f","d","g","e","h","i"]
 var computerguess = alphabet[Math.floor(Math.random() * alphabet.length)]
 console.log(computerguess)
 
-document.onkeypress = function (event) {
+document.onkeyup = function (event) {
 
     var userchoice = event.key
     if (userchoice === computerguess) {
@@ -25,7 +25,7 @@ document.onkeypress = function (event) {
             alert("you looose"); reset()
         };
     };
-}
+};
 function reset() {
     guessesleft = 10;
     wronletters = [];
